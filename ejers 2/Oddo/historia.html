@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Historia de los cohetes de la NASA">
     <title>Cohetes NASA - Historia</title>
     <link rel="stylesheet" href="styles-historia.css">
 </head>
 <body>
 
-    <header>
-        <h1>🚀 Cohetes de la <span>NASA</span></h1>
-        <nav>
+    <div id="top">
+        <h1>🚀 Cohetes de la NASA</h1>
+        <div id="nav">
             <a href="index.html">Inicio</a>
             <a href="historia.html">Historia</a>
             <a href="modernos.html">Cohetes Modernos</a>
-        </nav>
-    </header>
+        </div>
+    </div>
 
-    <main>
+    <div id="main">
 
-        <section id="intro-historia">
+        <div id="s1">
             <h2>La historia de los cohetes NASA</h2>
             <p>
                 Desde que la NASA fue creada en 1958, construyó muchos cohetes distintos.
                 Cada cohete fue diseñado para una misión diferente. Acá te cuento los más importantes.
             </p>
-        </section>
+        </div>
 
-        <section id="redstone">
+        <div id="s2">
             <h2>Cohete Redstone (1960)</h2>
             <p>
                 El Redstone fue uno de los primeros cohetes de la NASA.
@@ -38,15 +37,11 @@
             <p>
                 Alan Shepard fue el primer americano en el espacio gracias a este cohete, en 1961.
             </p>
-        </section>
+        </div>
 
-        <section id="saturn-v">
+        <div id="s3">
             <h2>Saturn V (1967)</h2>
-            <img
-                class="imagen-cohete"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Saturn_V_rocket.jpg/800px-Saturn_V_rocket.jpg"
-                alt="Cohete Saturn V"
-            >
+            <img id="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Saturn_V_rocket.jpg/800px-Saturn_V_rocket.jpg">
             <p>
                 El Saturn V fue el cohete más grande y más poderoso que la NASA hizo.
                 Medía 111 metros de altura. Era tan grande como un edificio de 36 pisos.
@@ -56,56 +51,52 @@
                 llegaron a la Luna en la misión Apollo 11. Fue un momento histórico para toda la humanidad.
             </p>
             <p>
-                <a class="enlace-externo" href="https://www.youtube.com/watch?v=OnoNITE-CLc" target="_blank">
+                <a href="https://www.youtube.com/watch?v=OnoNITE-CLc" target="_blank">
                     🎥 Ver el lanzamiento del Saturn V en YouTube
                 </a>
             </p>
-        </section>
+        </div>
 
-        <section id="tarjetas-historia">
+        <div id="s4">
             <h2>Programas importantes</h2>
-            <div class="tarjetas">
-                <div class="tarjeta">
+            <div id="tarjetas">
+                <div id="t1">
                     <h3>Programa Mercury (1958-1963)</h3>
                     <p>Fue el primer programa de vuelos espaciales tripulados de los EE.UU. Su objetivo era ver si los humanos podían sobrevivir en el espacio.</p>
                 </div>
-                <div class="tarjeta">
+                <div id="t2">
                     <h3>Programa Gemini (1961-1966)</h3>
                     <p>El programa Gemini enviaba dos astronautas juntos. Sirvió para aprender a hacer maniobras en el espacio antes de ir a la Luna.</p>
                 </div>
-                <div class="tarjeta">
+                <div id="t3">
                     <h3>Programa Apollo (1963-1972)</h3>
                     <p>El programa Apollo fue el que llevó a los humanos a la Luna. En total, 12 personas caminaron en la superficie lunar.</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="space-shuttle">
+        <div id="s5">
             <h2>Space Shuttle (1981-2011)</h2>
-            <img
-                class="imagen-cohete"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/STS-134_launch.jpg/800px-STS-134_launch.jpg"
-                alt="Lanzamiento del Space Shuttle"
-            >
+            <img id="img2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/STS-134_launch.jpg/800px-STS-134_launch.jpg">
             <p>
                 El Space Shuttle fue un transbordador espacial que podía reutilizarse.
                 Voló durante 30 años y realizó 135 misiones. Se usó para llevar satélites,
                 construir la Estación Espacial Internacional y hacer muchos experimentos científicos.
             </p>
             <p>
-                <a class="enlace-externo" href="https://www.youtube.com/watch?v=OaDMBaZcTOo" target="_blank">
+                <a href="https://www.youtube.com/watch?v=OaDMBaZcTOo" target="_blank">
                     🎥 Ver el Space Shuttle en YouTube
                 </a>
             </p>
-        </section>
+        </div>
 
-    </main>
+    </div>
 
-    <footer>
-        <p>Hecho por <span>Nicolás Oddo</span></p>
+    <div id="pie">
+        <p id="aut">Hecho por Nicolás Oddo</p>
         <p>Trabajo práctico - Desarrollo Frontend 2026</p>
         <p>Fuente: NASA.gov y Wikipedia</p>
-    </footer>
+    </div>
 
 </body>
 </html>

@@ -1,172 +1,105 @@
-:root {
-    --color-fondo: #111122;
-    --color-header: #1a1a33;
-    --color-footer: #1a1a33;
-    --color-texto: #ffffff;
-    --color-acento: #00b4d8;
-    --color-boton: #023e8a;
-    --color-boton-hover: #0077b6;
-    --fuente-principal: Arial, sans-serif;
-}
-
-* {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-image: url('https://images.unsplash.com/photo-1520034475321-cbe63696469a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    color: #333;
+    line-height: 1.6;
 }
 
-body {
-    font-family: var(--fuente-principal);
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-}
-
-/* HEADER */
-header {
-    background-color: var(--color-header);
-    padding: 15px 20px;
+#top {
+    background-color: #0b3d91; 
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
 
-header h1 {
-    font-size: 1.4rem;
-    margin-bottom: 12px;
+#top h1 {
+    margin-top: 0;
+}
+
+#nav {
+    margin-top: 15px;
+}
+
+#nav a {
+    color: rgba(0, 0, 0, 0.397);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
-header h1 span {
-    color: var(--color-acento);
+#nav a:hover {
+    color: #ff2200; 
+    text-decoration: underline;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
+#main {
+    max-width: 1000px; 
+    margin: 30px auto;
+    padding: 30px;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-nav a {
-    display: block;
+h2 {
+    color: #0b3d91;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+#c1, #c2, #c3, #c4 {
+    background-color: #eef2f5;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease; 
+}
+
+#c1:hover, #c2:hover, #c3:hover, #c4:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+#c1 img, #c2 img, #c3 img, #c4 img {
     width: 100%;
-    max-width: 260px;
-    background-color: var(--color-boton);
-    color: #fff;
-    text-decoration: none;
-    padding: 8px;
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+#c1 h3, #c2 h3, #c3 h3, #c4 h3 {
+    color: #0b3d91;
+    margin: 10px 0;
+}
+
+#c1 p, #c2 p, #c3 p, #c4 p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+#pie {
+    background-color: #222;
+    color: white;
     text-align: center;
-    font-size: 0.9rem;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
 }
 
-nav a:hover {
-    background-color: var(--color-boton-hover);
-}
-
-/* MAIN */
-main {
-    padding: 20px 15px;
-}
-
-main > h2 {
-    color: var(--color-acento);
-    font-size: 1rem;
-    text-align: center;
-    margin-bottom: 18px;
-}
-
-/* GRILLA */
-#cohetes {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-/* TARJETA COHETE */
-.cohete-card {
-    position: relative;
-    height: 240px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-}
-
-/* Capa sobre la imagen */
-.cohete-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(10, 10, 30, 0.55);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 15px;
-}
-
-.cohete-overlay h3 {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-}
-
-/* Specs */
-.specs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-}
-
-.spec {
-    background-color: rgba(2, 62, 138, 0.85);
-    color: #fff;
-    padding: 3px 8px;
-    font-size: 0.78rem;
-}
-
-.spec span {
-    color: var(--color-acento);
-}
-
-/* FOOTER */
-footer {
-    background-color: var(--color-footer);
-    text-align: center;
-    padding: 15px;
-    font-size: 0.85rem;
-}
-
-footer p {
-    margin-bottom: 4px;
-}
-
-footer span {
-    color: var(--color-acento);
-}
-
-/* RESPONSIVE */
-@media (min-width: 600px) {
-    nav {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    nav a { width: auto; }
-
-    #cohetes {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
-}
-
-@media (min-width: 900px) {
-    main {
-        max-width: 960px;
-        margin: 0 auto;
-    }
-
-    #cohetes {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .cohete-card {
-        height: 360px;
-    }
+#aut {
+    font-weight: bold;
+    color: #fc3d21;
 }
